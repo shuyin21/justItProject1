@@ -46,6 +46,12 @@ body {
     color: #000;
 }
 
+#semantic-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .nav {
     background-color: #333;
     height: 50px;
@@ -66,16 +72,24 @@ body {
 }
 
 #footer {
-    height: 50px;
+    /* position: absolute; */
+
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #333;
-    position: absolute;
-    bottom: 0px;
+
+    height: 50px;
+
     width: 100vw;
     color: #fff;
 
+}
+
+@media only screen and (max-width: 600px) {
+    #footer {
+        margin-bottom: 40px;
+    }
 }
 
 .box {
@@ -87,7 +101,7 @@ body {
 }
 
 #form-div {
-    margin-top: 100px;
+    margin: 100px 0 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
