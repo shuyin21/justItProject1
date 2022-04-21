@@ -5,7 +5,39 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+#index-body {}
 
+#background-image {
+    position: absolute;
+    background-image: url(../images/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+#justit {
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 2px 2px #888;
+    border: 1px solid #fff;
+}
+
+#icons-img {
+    width: 200px;
+}
+
+.header-div {
+    /* background-color: #333; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
 
 #header-wrapper {
     display: flex;
@@ -13,7 +45,28 @@ body {
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    margin-bottom: 100px;
+
+}
+
+/* .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+} */
+
+.index-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #333; */
+
+}
+
+.index-p p {
+    width: 400px;
+    text-align: center;
+    color: #fff;
 }
 
 #links-wrapper {
