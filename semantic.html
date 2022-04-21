@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>ID/Class</title>
+    <title>Semantic</title>
 </head>
 
 <body>
@@ -35,6 +35,28 @@
                 vitae
                 praesentium natus.
             </p>
+    </div>
+    <div id="form-div">
+        <h3>Register</h3>
+        <form id="form">
+            <label for="first">First name:</label>
+
+            <input type="text" name="first" placeholder="firstname" required>
+
+            <br><label for="last">Last name:</label>
+            <input type="text" name="last" placeholder="lastname" required>
+            <br><label for="email">email</label>
+            <input type="email" placeholder="email" name="email" required>
+            <br><label for="date">Date of birth:</label>
+            <input type="date" name="date" required>
+            <br><label for="password">Password:</label>
+            <input type="password" placeholder="password" name="password">
+            <br><label for="confirm">Confirm password:</label>
+            <input type="password" name="confirm" required placeholder="confirm password">
+
+            <br>
+            <div class="submit-div"><input type="submit" value="Register"></div>
+        </form>
     </div>
     <footer id="footer"><span>Made by Gyula Nagy</span></footer>
 </body>
