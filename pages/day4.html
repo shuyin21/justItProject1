@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/day4-styles.css">
+    <title>Day4</title>
+</head>
+
+<body>
+    <div id="main">
+
+
+
+        <h2>Select Option</h2>
+        <label for="consoles">Choose your desired Gaming Console 🎮:</label>
+        <select name="consoles" id="consoles">
+            <option value="default">please select console</option>
+            <option value="playstation">Playstation 5</option>
+            <option value="xbox">Xbox SX</option>
+            <option value="nintendo">Nintendo Switch</option>
+            <option value="pc">PC</option>
+        </select>
+
+
+    </div>
+
+    <form>
+        <input type="radio" id="dualshock" name="fav_controller" value="Shock">
+          <label for="shock">DualShock</label><br>
+          <input type="radio" id="css" name="fav_controller" value="CSS">
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_controller" value="JavaScript">
+          <label for="javascript">JavaScript</label>
+    </form>
+
+    <h1>Display Radio Buttons</h1>
+
+    <form>
+        <p>Please select your favorite Web language:</p>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript">JavaScript</label>
+
+    </form>
+
+    <form action="">
+
+        <input type="checkbox" name="" id="">
+        <label for=""></label>
+        <input type="checkbox" name="" id="">
+        <label for=""></label>
+        <input type="checkbox" name="" id="">
+        <label for=""></label>
+
+    </form>
+
+
+    <h2>Data List</h2>
+    <label for="game">Choose your game option</label>
+    <input list="buying" name="game" id="game">
+    <datalist id="buying">
+        <option value="Elden Ring"></option>
+        <option value="Horizon Forbidden West"></option>
+        <option value="Gran Turismo 7"></option>
+        <option value="Sifu"></option>
+        <option value="Demon`s Souls"></option>
+    </datalist>
+
+    <form>
+        <fieldset>
+            <legend>Profile:</legend>
+            <label for="first">firstname</label>
+            <input type="text" name="first" id="first">
+            <br>
+            <label for="last">lastname</label>
+            <input type="text" name="last" id="last">
+            <br>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for=""></label>
+            <input type="date" name="" id="">
+            <br>
+            <input type="submit" value="">
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

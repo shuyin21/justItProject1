@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/restaurant.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Nanum+Myeongjo&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <title>Reastaurant</title>
+</head>
+
+<body>
+    <nav>
+        <div id="logo">GY`B</div>
+        <div id="nav-links">
+
+            <a href="#images-wrapper">Gallery</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+    <div id="hero-img">
+        <div id="bistro-div">
+            <p>Welcome to</p>
+
+            <h1>Gyula`s Bistro</h1>
+        </div>
+    </div>
+    <div id="header">
+        <p>We specialize in Italian Cousine. We take great pride in providing a relaxed and
+            unpretentious environment, which offers personable service and excellent quality food.</p>
+    </div>
+    <div id="images-wrapper">
+        <img src="../images/bolognese.jpg" alt="bolognese">
+        <img src="../images/risotto.jpg" alt="risotto">
+        <img src="../images/tagliatelle.jpg" alt="tagliatelle">
+    </div>
+    <div id="main">
+        <h2>Please place your order</h2>
+        <div id="order">
+
+            <form>
+                <fieldset>
+                    <legend>Your details:</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="adress">Adress:</label>
+                    <input type="text" id="adress" name="adress" required><br>
+                </fieldset>
+                <div id="form">
+                    <h2>Select Your Main dish</h2>
+                    <label for="main-order">Choose your main dish:</label>
+                    <select name="main-order" id="main-order" required>
+                        <option value="default">please select your food</option>
+                        <option value="bolognese">Spaghetti bolognese</option>
+                        <option value="milanese">Tagliatelle milanese</option>
+                        <option value="escalope">Turkey escalope with mash</option>
+                        <option value="risotto">Seafood risotto</option>
+                    </select>
+
+
+
+
+
+                    <h2>You can have a free complimentary Hot drink</h2>
+                    <label for="drink">Choose your Compimentary Drink</label>
+                    <input list="buying" name="drink" id="drink" required>
+                    <datalist id="buying">
+                        <option value="Americano"></option>
+                        <option value="Cappucino"></option>
+                        <option value="English Breakfast Tea"></option>
+
+                    </datalist>
+
+                    <p>Do you want your drink with milk or without:</p>
+                    <div id="milk-selection">
+                          <input type="radio" id="milk" name="milk" value="milk">
+                          <label for="milk">Yes</label><br>
+                          <input type="radio" id="No-milk" name="milk" value="No-milk">
+                          <label for="No-milk">No</label><br>
+                         
+                    </div>
+                    <input class="submit-button" type="submit" value="submit your order">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div id="contact">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2151.828218819169!2d-0.1921235862547938!3d51.45594679618923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f66cf4a8fdb%3A0xf7785e2abf2d345f!2sSouthside%20Wandsworth!5e0!3m2!1sen!2suk!4v1650639488680!5m2!1sen!2suk"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="address-box">
+            <h3>Gyula`s Bistro</h3>
+            <p>Wandsworth High St, London SW18 4TF</p>
+            <p>02049851654164</p>
+        </div>
+    </div>
+    <footer>
+        <h4>Created by Gyula Nagy</h4>
+    </footer>
+</body>
+
+</html>
