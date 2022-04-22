@@ -100,9 +100,12 @@ body {
 }
 
 #semantic-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    overflow-x: hidden;
+    margin: 0px;
+    position: relative;
+    min-height: 100%;
+    height: auto;
+
 }
 
 .nav {
@@ -125,15 +128,15 @@ body {
 }
 
 #footer {
-    /* position: absolute; */
-
     display: flex;
     align-items: center;
     justify-content: center;
+
+
     background-color: #333;
-
+    position: absolute;
     height: 50px;
-
+    bottom: -140px;
     width: 100vw;
     color: #fff;
 
