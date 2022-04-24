@@ -5,7 +5,9 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-#index-body {}
+:root {
+    --white: #fff;
+}
 
 #background-image {
     position: absolute;
@@ -19,7 +21,7 @@ body {
 }
 
 #justit {
-    color: #fff;
+    color: var(--white);
     font-size: 48px;
     text-shadow: 2px 2px #888;
     border: 1px solid #fff;
@@ -30,7 +32,7 @@ body {
 }
 
 .header-div {
-    /* background-color: #333; */
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -48,18 +50,13 @@ body {
 
 }
 
-/* .image-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-} */
+
 
 .index-p {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #333; */
+
 
 }
 
