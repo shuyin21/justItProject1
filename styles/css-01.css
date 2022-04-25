@@ -51,10 +51,53 @@ h1 {
     background-color: rgba(90, 0, 20, 0.4);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .container p {
     color: red;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: small;
+}
+
+button {
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+#con-div .content::first-letter {
+    color: orange;
+    font-weight: bolder;
+}
+
+.fa-angular {
+    font-size: 50px;
+    color: red;
+}
+
+.fa-arrow-up {
+    font-size: 60px;
+    color: green;
+}
+
+.fa-arrow-up:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.font-aws::first-letter {
+    color: blue;
+    font-weight: bolder;
 }
