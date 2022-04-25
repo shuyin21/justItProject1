@@ -101,3 +101,31 @@ button:hover {
     color: blue;
     font-weight: bolder;
 }
+
+.btn-div {
+    height: 50px;
+}
+
+.atr-sel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.atr-div {
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #000
+}
+
+[name='email'] {
+    background-color: yellow;
+}
+
+[click='send']:hover {
+    background-color: red;
+    cursor: pointer;
+}
