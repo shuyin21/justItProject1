@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+}
+
+header h1 {
+    border-color: blue;
+    border-style: double;
+    padding: 10px;
+
+
+}
+
+
+
+#Bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url('../images/Cloud.png') no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    background-color: rgba(4, 4, 4, 0.9);
+    z-index: -1;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+p {
+    font-size: 24px;
+    border-style: solid dotted;
+    border-color: red;
+    border-width: 3px;
+}
+
+.circle {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+#mandp {
+    width: 90%;
+    height: 200px;
+    border: 1px solid #fff;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #666;
+    margin: 20px;
+}
+
+.small-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #666;
+    background-color: #000;
+}
+
+.left {
+    margin: 40px 0 0 20px;
+}
+
+.right {
+    margin: 50px;
+}
+
+#left {
+    background-color: brown;
+}
+
+#right {
+    background-color: bisque;
+}
+
+.container {
+    width: 80%;
+    height: 200px;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    transform: scale(.96);
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: aquamarine;
+}
