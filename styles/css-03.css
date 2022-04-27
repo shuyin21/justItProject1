@@ -87,6 +87,13 @@ ul li a:hover {
     color: #fff;
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 footer {
     width: 100%;
     height: 50px;
@@ -96,4 +103,45 @@ footer {
     justify-content: center;
     position: absolute;
     bottom: 0;
+}
+
+#burger {
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+#burger div {
+    width: 35px;
+    height: 5px;
+    background-color: bisque;
+    margin: 6px 0;
+}
+
+
+.about-nav {
+    position: absolute;
+    right: 14px;
+    width: 150px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #888;
+    border: 2px solid #000;
+}
+
+.non-display {
+    display: none;
+}
+
+#about-nav ul {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#about-nav ul li {
+    margin: 20px 0;
 }
