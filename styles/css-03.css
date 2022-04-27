@@ -4,17 +4,53 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    margin: 0 2%;
+    height: 100px;
+    background-color: #888;
+    border: 2px solid #333;
+
+}
+
+h1 {
+    color: #fff;
+    margin-left: 20px;
+}
+
+em {
+    border: 1px solid #000;
+    border-radius: 50%;
+}
 
 ul {
+    display: flex;
     list-style-type: none;
 
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
 }
 
-ul li a {
+ul li {
+
+    margin: 0 10px;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+li a {
     text-decoration: none;
     text-transform: uppercase;
+    color: bisque;
+}
+
+ul li a:hover {
+    color: #fff;
 }
 
 #about-wrapper {
@@ -23,6 +59,7 @@ ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px 0;
 }
 
 .about {
@@ -48,4 +85,15 @@ ul li a {
     display: inline;
     background-color: blue;
     color: #fff;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
 }
