@@ -6,6 +6,9 @@ const cssWrapper = document.getElementById('css-wrapper');
 const jsWrapper = document.getElementById('js-wrapper');
 const linkWrapper = document.getElementById('link-wrapper');
 const buttonsWrapper = document.getElementById('buttons-wrapper');
+const line = document.getElementById('line');
+const vLine = document.getElementById('v-line');
+const extra = document.getElementById('extra');
 const htmlList = document.querySelectorAll('li.html-list')
 const cssList = document.querySelectorAll('li.css-list');
 
