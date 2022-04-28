@@ -9,6 +9,7 @@ const buttonsWrapper = document.getElementById('buttons-wrapper');
 const line = document.getElementById('line');
 const vLine = document.getElementById('v-line');
 const extra = document.getElementById('extra');
+const opBtn = document.getElementById('h3-div');
 const htmlList = document.querySelectorAll('li.html-list')
 const cssList = document.querySelectorAll('li.css-list');
 
@@ -39,8 +40,8 @@ jsLogo.addEventListener('click', () => {
 const Removal = (Logo, Wrapper) => {
     Logo.classList.toggle('logo-img');
     Wrapper.classList.toggle('logo-wrapper');
-    Logo.classList.toggle('non-visible');
-    Wrapper.classList.toggle('non-visible');
+    Logo.classList.toggle('no-width');
+    Wrapper.classList.toggle('no-width');
     linkWrapper.classList.toggle('link-toStart');
 
 
@@ -48,14 +49,35 @@ const Removal = (Logo, Wrapper) => {
 }
 
 const listShower = (x) => {
-    buttonsWrapper.classList.toggle('non-visible');
+    buttonsWrapper.classList.toggle('no-width');
     buttonsWrapper.classList.toggle('buttons-wrapper');
     x.forEach((elem) => {
+        // elem.classList.toggle('non-visible');
+
         elem.classList.toggle('not-display');
+
+
+
+
     })
 
 }
 
 
+opBtn.addEventListener('click', () => {
 
+    vLine.classList.toggle('not-show');
+    vLine.classList.toggle('line-extra-slow');
+
+    setTimeout(function () {
+        extra.classList.toggle('no-size');
+        extra.classList.toggle('not-show');
+    }, 1000);
+
+    line.classList.toggle('not-show');
+    line.classList.toggle('line-extra2');
+
+
+    // extra.classList.toggle('line-extra2');
+})
 
