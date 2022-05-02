@@ -22,17 +22,6 @@ li {
 }
 
 /* index styles */
-#background-image {
-    position: absolute;
-
-    background-color: #000;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    z-index: -2;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-}
 
 #header-wrapper {
     display: flex;
@@ -62,41 +51,31 @@ li {
 
 #work-wrapper {
     width: 100vw;
-    height: 300px;
+
     background-color: #fff;
 
 }
 
-#link-wrapper {
+.work-height {
+    height: 300px;
+}
+
+/* #link-wrapper {
     width: 70%;
     height: 100%;
 
     display: flex;
     align-items: center;
-
-}
-
-@media only screen and (max-width: 600px) {
-    #link-wrapper {
-        flex-direction: column;
-        height: 800px;
-        width: 100%;
-    }
-
-    #work-wrapper {
-        height: 30%;
-    }
-}
-
-.link-wrapper {
     justify-content: center;
+
+} */
+
+#mobile-list {
+    display: none;
 }
 
-.link-toStart {
-    justify-content: flex-start;
-    transition: 1s ease-in-out;
 
-}
+
 
 .buttons-wrapper {
     border: 1px solid #000;
@@ -123,21 +102,24 @@ li {
     margin: 10px 0;
 }
 
-@media only screen and (max-width: 600px) {
-    .buttons-wrapper {
-        height: 800px;
-        width: 100%;
-        text-align: center;
-    }
 
-    .buttons-wrapper ul {
-        flex-wrap: unset;
-    }
+.n-disp {
+    display: none;
 }
 
-.not-display {
-    z-index: -99;
-    transition: 2s ease-in;
+.ul-wrapper {
+    background-color: #000;
+    border-radius: 7px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+}
+
+.ul-height {
+    height: 200px;
 }
 
 .not-show {
@@ -149,34 +131,39 @@ li {
 
 .no-size {
 
-    height: 0;
+    width: 0;
+    transition: 1s ease-out;
+}
+
+.no-size2 {
+
+    transition: 1s ease-out;
 }
 
 .logo-img {
 
     width: 150px;
     height: 150px;
+    margin: 0 50px;
     cursor: pointer;
+
 }
 
 #html-logo:hover,
 #css-logo:hover,
 #js-logo:hover {
     transform: scale(1.1);
+    transition: 0.1s ease-in;
 }
 
 
 
 .non-visible {
-    visibility: hidden;
-    transition: 0.5s ease-out;
+    opacity: 0;
+
 }
 
-.no-width {
-    width: 0;
-    visibility: none;
-    transition: 1s ease-in-out;
-}
+
 
 .logo-wrapper {
     width: 30%;
@@ -194,6 +181,7 @@ li {
 .btn {
     width: 150px;
     height: 40px;
+    margin: 3px;
     border-radius: 7px;
     cursor: pointer;
     background-color: #333;
@@ -327,4 +315,117 @@ footer {
     height: 50px;
     color: #fff;
     font-weight: 100;
+}
+
+.btn-hide {
+    animation: hide 1s ease-out forwards;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 100%;
+    }
+
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0%;
+    }
+
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.show {
+    animation: show 1s ease-in-out forwards;
+}
+
+.hide {
+    animation: hide 1s ease-in-out forwards;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #000;
+    }
+
+
+
+    #work-wrapper {
+        width: 100%;
+
+        background-color: #000;
+        flex-direction: column;
+    }
+
+    .work-height {
+        height: 200px;
+    }
+
+    #html-logo,
+    #css-logo,
+    #js-logo {
+        display: none;
+    }
+
+    #m-html,
+    #m-css,
+    #m-js {
+        cursor: pointer;
+    }
+
+    #mobile-list {
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #mobile-list h3 {
+        width: 30%;
+        padding: 10px 0;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        border: 1px solid #d01d9b;
+        border-radius: 7px;
+    }
+
+    .ul-wrapper {
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ul-height {
+        height: 100px;
+    }
+
+    .new-height {
+        height: 400px;
+    }
+
+    .new-height2 {
+        height: 250px;
+    }
+
+    .no-display {
+        display: none;
+    }
+
+    #other-projects {
+        height: 200px;
+    }
+
+    footer {
+        position: absolute;
+    }
 }
