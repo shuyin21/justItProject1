@@ -426,6 +426,6 @@ footer {
     }
 
     footer {
-        position: absolute;
+        position: relative;
     }
 }
