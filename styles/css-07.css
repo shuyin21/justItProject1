@@ -28,6 +28,10 @@ h1 {
 
 .header {
     grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 a {
@@ -48,6 +52,18 @@ a {
 
 .menu li {
     margin: 0 10px;
+}
+
+.burger-wrapper {
+    display: none;
+    margin-right: 5px;
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
 }
 
 .btn {
@@ -174,4 +190,29 @@ p {
         ' footer footer footer footer ';
     gap: 10px 10px;
 
+}
+
+@media (max-width:768px) {
+    .container {
+        height: 80vh;
+        grid-template-columns: 49% 48%;
+        grid-template-rows: 8% 38% 40% 10%;
+        grid-template-areas:
+            ' header header '
+            ' main main  '
+            ' sect1 sect2  '
+            ' footer footer  ';
+    }
+
+    .div3 {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .burger-wrapper {
+        display: block;
+    }
 }
