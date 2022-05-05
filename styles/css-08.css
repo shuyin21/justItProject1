@@ -2,47 +2,274 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #666;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.burger {
+    display: none;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Koulen', sans-serif;
+    border: none;
+}
+
+nav ul {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    align-self: center;
+    list-style: none;
+    margin: 0 10px;
+}
+
+li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+li div {
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.undernav {
+    background-color: #fff;
+    height: 30px;
+    justify-content: center;
+    margin: 0;
+    color: #000;
+}
+
+.undernav ul {
+    justify-content: flex-start;
+
+}
+
+.undernav ul li div {
+    border: none;
+}
+
+.undernav ul li {
+    margin: 0;
+}
+
+.undernav ul li div:hover {
+    background-color: #999;
+}
+
+.deals {
+    color: red;
 }
 
 
-div {
+
+/* div {
     border: 1px solid #000;
-}
+} */
 
 .first {
     grid-area: first;
+    background-color: #000;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
 }
 
 .second {
     grid-area: second;
+    overflow: hidden;
+    max-width: 30vw;
+    max-height: 340px;
+
+}
+
+.second img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    overflow: hidden;
 }
 
 .third {
     grid-area: third;
 }
 
+.carousel-item {
+    max-width: 900px;
+    overflow: hidden;
+    height: 340px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    overflow: hidden;
+}
+
 .fourth {
     grid-area: fourth;
+    height: 98.5%;
+    object-fit: fill;
+    overflow: hidden;
 }
 
 .fifth {
     grid-area: fifth;
+    border: 1px solid #000;
 }
 
 .sixth {
     grid-area: sixth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
 }
 
 .main-wrapper {
     width: 95%;
     height: 700px;
-    margin: 0 5px;
-    border: 1px solid #000;
+    margin: 20px 5px;
+    padding: 5px;
+    /* border: 1px solid #000; */
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto 50% auto;
+    grid-template-columns: 24% 50% 25.5%;
+    grid-template-rows: 23% 50% 23%;
     gap: 5px 5px;
-    grid-template-areas: 'first first second '
-        'third third third'
-        'fourth fifth sixth';
+    grid-template-areas: 'first first first '
+        'second third fourth'
+        ' fifth sixth sixth';
+}
+
+
+
+.contact {
+    display: flex;
+    padding: 50px;
+    height: 400px;
+    width: 100%;
+}
+
+iframe {
+    height: 90%;
+    width: 40%;
+}
+
+.address {
+    height: 90%;
+    width: 40%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: #666;
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    z-index: 9;
+}
+
+@media (max-width:768px) {
+    .main-wrapper {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 50% 15% 23%;
+        grid-template-areas: 'first first  '
+            ' third third'
+            '  fifth fourth'
+            'sixth sixth';
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    iframe,
+    .address {
+        width: 100%;
+    }
+
+    .address {
+        margin: 10px 0;
+
+    }
+
+    nav ul li div {
+        font-size: 12px;
+    }
+
+    .undernav {
+        display: none;
+    }
+
+    nav {
+        align-items: center;
+    }
+
+    .burger {
+        margin-right: 5px;
+        display: unset;
+    }
+
+    .burger div {
+        width: 28px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+    }
 }
