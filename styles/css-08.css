@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div {
+    border: 1px solid #000;
+}
+
+.first {
+    grid-area: first;
+}
+
+.second {
+    grid-area: second;
+}
+
+.third {
+    grid-area: third;
+}
+
+.fourth {
+    grid-area: fourth;
+}
+
+.fifth {
+    grid-area: fifth;
+}
+
+.sixth {
+    grid-area: sixth;
+}
+
+.main-wrapper {
+    width: 95%;
+    height: 700px;
+    margin: 0 5px;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 50% auto;
+    gap: 5px 5px;
+    grid-template-areas: 'first first second '
+        'third third third'
+        'fourth fifth sixth';
+}
