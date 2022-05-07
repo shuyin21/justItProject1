@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+
+}
+
+p,
+h1,
+a {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    opacity: .4;
+    text-align: center;
+}
+
+.centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whtonblk {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+
+
+.header {
+    grid-area: header;
+
+
+}
+
+
+
+.header-nav {
+    grid-area: header-nav;
+
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.justit-wrapper {
+    grid-area: justit-wrapper;
+    z-index: 10;
+    opacity: .4;
+
+}
+
+.prj-wrapper {
+    grid-area: prj-wrapper;
+    z-index: 10;
+    opacity: .4;
+}
+
+h3 {
+    position: absolute;
+    border: 1px solid #fff;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+h3:hover {
+    padding: 10px;
+    border: 1px solid blue;
+    color: yellow;
+}
+
+
+.list-wrapper {
+    grid-area: list-wrapper;
+    flex-direction: column;
+}
+
+#lg-wrapper {
+    width: 100%;
+    height: 50px;
+    z-index: 25;
+    /* border: 1px solid #fff; */
+    color: white;
+    justify-content: space-around;
+    opacity: .6;
+
+}
+
+.html-li {
+    visibility: hidden;
+}
+
+.non-visible {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+#html,
+#css,
+#js {
+    cursor: pointer;
+}
+
+ul {
+    width: 1fr;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+li {
+    z-index: 10;
+
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border: 3px solid transparent;
+    opacity: .4;
+}
+
+li:hover {
+    border: 3px solid blue;
+    opacity: .8;
+}
+
+
+li div {
+    z-index: 12;
+    color: #fff;
+    margin: 5px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+
+}
+
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    padding: 0 10% 5px;
+    gap: 5px 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1.5fr 2fr;
+    grid-template-areas: 'header header'
+        'header-nav header-nav'
+        'justit-wrapper prj-wrapper'
+        'list-wrapper list-wrapper';
+}
+
+video {
+    position: absolute;
+    width: 100vw;
+    height: 90%;
+}
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: #000;
+}
+
+
+@media (max-width:768px) {
+    .whtonblk {
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 0 2% 5px;
+    }
+}
