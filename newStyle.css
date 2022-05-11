@@ -13,8 +13,9 @@ a {
     padding: 0;
     margin: 0;
     z-index: 10;
-    opacity: .4;
+    /* opacity: .4; */
     text-align: center;
+    background-color: transparent;
 }
 
 .centering {
@@ -52,14 +53,21 @@ a {
 .justit-wrapper {
     grid-area: justit-wrapper;
     z-index: 10;
-    opacity: .4;
+    /* opacity: .4; */
+    background-color: transparent;
 
+}
+
+#it-btn,
+#personal-btn {
+    background-color: transparent;
 }
 
 .prj-wrapper {
     grid-area: prj-wrapper;
     z-index: 10;
-    opacity: .4;
+    /* opacity: .4; */
+    background-color: transparent;
 }
 
 h3 {
@@ -86,10 +94,10 @@ h3:hover {
     width: 60vw;
     height: 50px;
     z-index: 25;
-
+    background-color: transparent;
     color: white;
     justify-content: space-around;
-    opacity: .6;
+    /* opacity: .6; */
 
 }
 
@@ -107,10 +115,13 @@ h3:hover {
 #css,
 #js {
     cursor: pointer;
+    width: 150px;
+    font-size: 24px;
     padding: 5px;
     border-radius: 7px;
     border: 3px solid transparent;
     z-index: 99;
+    background-color: transparent;
 }
 
 #html:hover,
