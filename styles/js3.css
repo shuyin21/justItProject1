@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.calc {
+    color: red;
+    font-weight: bold;
+
+}

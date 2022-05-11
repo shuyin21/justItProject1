@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/js3.css">
+    <title>Js day 3</title>
+</head>
+
+<body>
+
+    <h1>JS day 3</h1>
+
+    <h3>Coercion</h3>
+    <p>Similar to conversion just Javasript engine doing it automaticly</p>
+    <p>Don`t work with + like '12' + 2 = 122 but if '12' / 6 = 2</p>
+
+    <h3>Scope</h3>
+    <ol>
+        <li>Block scope</li>
+        <li>Local/function scope</li>
+        <li>Global scope</li>
+    </ol>
+    <p>In <b> block scope </b> you cant use variable outside of your function where you created it. Exeption is var.</p>
+    <p> <b>Local scope </b>only usable in the function where you declared it.</p>
+    <p>Variables declared Globbaly (outside any function) have <b>Global scope</b> .</p>
+    <p>Do NOT create global variables unless you intend to -
+
+        Your global variables (or functions) can overwrite window variables (or functions).
+
+        Any function, including the window object, can overwrite your global variables and functions.</p>
+
+    <h3>Max HR Calculator</h3>
+    <button onClick="calculateMaxHr()">Calculate</button>
+    <p id="answer"> </p>
+    <p id="max-hr" class="calc"></p>
+    <br>
+    <h3>If else if</h3>
+    <p>if(condition){if condition is met run the condition}
+        else if(condition){if condition is met run the condition}
+        else{do this}
+    </p>
+    <h4>If else practice</h4>
+    <button onClick="ifPractice()">Start</button>
+    <br>
+    <h3>Switch</h3>
+    <p>Using cases. <br> syntax = <br>
+        switch(variable){ <br>
+        case x : do this; <br>
+        break; <br>
+        case y: do this; <br>
+        break; <br>
+        default: this; }</p>
+    <h4>Here i am checking the day with a switch steatment</h4>
+    <h5>Today is <b id="todayDay" class="red"></b> </h5>
+    <script src="/js/js3.js"></script>
+</body>
+
+</html>
