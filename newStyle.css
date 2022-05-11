@@ -162,6 +162,23 @@ li a {
 
 }
 
+.html-li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.html-li a {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .p-pro {
     text-align: center;
 }

@@ -5,141 +5,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <link rel="stylesheet" href="/styles/styles.css">
-    <title>JustIt Projects</title>
+    <link rel="stylesheet" href="newStyle.css">
+    <title>Document</title>
 </head>
 
-<body id="index-body">
-
-    <div id="header-wrapper">
-        <h1 id="justit">Just It Projects</h1>
-
-
-        <h3>The daily works of</h3>
-
-        <h2>Gyula Nagy</h2>
-        <div class="index-p">
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="/videos/video-2.mp4" type="video/mp4">
+    </video>
+    <div class="hero">
+        <!-- Header -->
+        <div class="header centering">
+            <h1>The daily exercise of <br>
+                Gyula Nagy</h1>
+        </div>
+        <!-- P message -->
+        <div class="header-nav centering">
             <p>I will post daily my projects and works what i do with this course. You can compare your works to mine or
-                give me
-                feedback.</p>
+                give me feedback.</p>
         </div>
-    </div>
-
-    </div>
-
-
-
-
-
-    <div id="work-wrapper" class="box work-height">
-
-        <img src="/images/html.png" id="html-logo" class="logo-img" alt="">
-        <img src="/images/css.png" id="css-logo" class="logo-img" alt="">
-        <img src="/images/javascript.png" id="js-logo" class="logo-img" alt="">
-        <div id="mobile-list">
-            <h3 id="m-html">HTML</h3>
-            <h3 id="m-css">CSS</h3>
-            <h3 id="m-js">JS</h3>
+        <div class="justit-wrapper centering whtonblk">
+            <!-- Two option to choose -->
+            <h3 id="it-btn">Just IT Projects</h3>
 
         </div>
+        <div class="prj-wrapper centering whtonblk">
 
-
-
-        <div id="ul-wrapper" class="box no-size non-visible">
-
-
-            <ul id="html-list" class="box  ul-wrapper ul-height">
-                <!-- HTML Links -->
-                <li class="html-list n-disp"><a href="/pages/html.pages/first.html"><button class="btn">first
-                            day</button></a></li>
-                <li class="html-list n-disp"><a href="/pages/html.pages/strawberry.html"><button class="btn">Jam company
-                            🍓</button></a></li>
-                <li class="html-list n-disp"><a href="/pages/html.pages/frames.html"><button
-                            class="btn">IFrames</button></a>
+            <h3 id="personal-btn">Personal Projects</h3>
+        </div>
+        <div class="list-wrapper centering">
+            <div id="lg-wrapper" class="centering non-visible">
+                <div id="html">HTML</div>
+                <div id="css">CSS</div>
+                <div id="js">JAVASCRIPT</div>
+            </div>
+            <ul>
+                <!-- HTML Lists -->
+                <li class="html-li not-displayer">
+                    <a href="/pages/html.pages/first.html" target="_blank">day 1</a>
                 </li>
-                <li class="html-list n-disp"><a href="/pages/html.pages/table.html"><button
-                            class="btn">Table/List</button></a>
+                <li class="html-li not-displayer">
+                    <a href="/pages/html.pages/strawberry.html" target="_blank">Jam</a>
                 </li>
-                <li class="html-list n-disp"><a href="/pages/html.pages/semantic.html"><button
-                            class="btn">Semantic/forms</button></a>
+                <li class="html-li not-displayer">
+                    <a href="/pages/html.pages/frames.html" target="_blank">Iframes</a>
                 </li>
-                <li class="html-list n-disp"><a href="/pages/html.pages/day4.html"><button
-                            class="btn">forms</button></a>
+                <li class="html-li not-displayer">
+                    <a href="/pages/html.pages/table.html" target="_blank">Table</a>
                 </li>
-                <li class="html-list n-disp"><a href="/pages/html.pages/restaurant.html"><button
-                            class="btn">Restaurant</button></a>
+                <li class="html-li not-displayer">
+                    <a href="/pages/html.pages/semantic.html" target="_blank">semantic</a>
                 </li>
-                <li class="html-list n-disp"><a href="/pages/html.pages/challenge.html"><button class="btn">HTML
-                            Challenge 1</button></a></li>
 
 
-                <!-- CSS Links -->
-                <li class="css-list n-disp"><a href="/pages/css.pages/css-01.html"><button class="btn">CSS
-                            day1</button></a></li>
-                <li class="css-list n-disp"><a href="/pages/css.pages/css-02.html"><button class="btn">CSS
-                            day2</button></a></li>
-                <li class="css-list n-disp"><a href="/pages/css.pages/css-03.html"><button class="btn">CSS
-                            day3</button></a></li>
-                <li class="css-list n-disp"><a href="/pages/css.pages/css-04.html"><button class="btn">CSS
-                            day4</button></a></li>
-                <li class="css-list n-disp"><a href="/pages/css.pages/css-05.html"><button class="btn">CSS
-                            day5</button></a></li>
+                <li class="html-li not-displayer">
+                    <a href="/pages/html.pages/day4.html" target="_blank">forms</a>
+                </li>
+                <li class="html-li not-displayer">
+                    <a href="/pages/html.pages/restaurant.html">Restaurant</a>
+                </li>
+                <li class="html-li not-displayer">
+                    <a href="/pages/html.pages/challenge.html">Challenge</a>
+                </li>
+                <!-- CSS LISTS -->
+                <li class="css-li not-displayer">
+                    <a href="/pages/css.pages/css-01.html" target="_blank">d-1</a>
+                </li>
+                <li class="css-li not-displayer">
+                    <a href="/pages/css.pages/css-02.html" target="_blank">d-2</a>
+                </li>
+                <li class="css-li not-displayer">
+                    <a href="/pages/css.pages/css-03.html" target="_blank">d-3</a>
+                </li>
+                <li class="css-li not-displayer">
+                    <a href="/pages/css.pages/css-04.html" target="_blank">d-4</a>
+                </li>
+                <li class="css-li not-displayer">
+                    <a href="/pages/css.pages/css-05.html" target="_blank">d-5</a>
+                </li>
+                <li class="css-li not-displayer">
+                    <a href="/pages/css.pages/css-06.html" target="_blank">d-6</a>
+                </li>
+                <li class="css-li not-displayer">
+                    <a href="/pages/css.pages/css-07.html" target="_blank">d-7</a>
+                </li>
+                <li class="css-li not-displayer">
+                    <a href="/pages/css.pages/css-08.html" target="_blank">d-8</a>
+                </li>
+                <li class="css-li not-displayer">
+                    <a href="/pages/css.pages/css-09.html" target="_blank">d-9</a>
+                </li>
+                <!-- JAVASCRIPT Lists -->
+                <li class="js-li not-displayer">
+                    <a href="/pages/js.pages/js1.html" target="_blank">d-1</a>
+                </li>
+                <li class="js-li not-displayer">
+                    <a href="/pages/js.pages/js2.html" target="_blank">d-2</a>
+                </li>
+                <li class="js-li not-displayer">
+                    <a href="#">d-3</a>
+                </li>
+                <li class="js-li not-displayer">
+                    <a href="#">d-4</a>
+                </li>
+                <li class="js-li not-displayer">
+                    <a href="#">d-5</a>
+                </li>
+                <li class="js-li not-displayer">
+                    <a href="#">d-6</a>
+                </li>
+                <li class="js-li not-displayer">
+                    <a href="#">d-7</a>
+                </li>
+                <li class="js-li not-displayer">
+                    <a href="#">d-8</a>
+                </li>
+                <li class="js-li not-displayer">
+                    <a href="#">d-9</a>
+                </li>
+                <li class="js-li not-displayer">
+                    <a href="#">d-10</a>
+                </li>
 
-                <li class="css-list n-disp"><a href="/pages/css.pages/css-06.html"><button class="btn">CSS
-                            day6</button></a></li>
-                <li class="css-list n-disp"><a href="/pages/css.pages/css-07.html"><button class="btn">CSS
-                            day7</button></a></li>
-                <li class="css-list n-disp"><a href="/pages/css.pages/css-08.html"><button class="btn">CSS
-                            day8</button></a></li>
-                <li class="css-list n-disp"><a href="/pages/css.pages/css-09.html"><button class="btn">CSS
-                            day9</button></a></li>
-                <!-- Js Links -->
-                <li class="js-list n-disp"><a href="/pages/js.pages/js1.html"><button class="btn">JS
-                            day1</button></a></li>
-                <li class="js-list n-disp"><a href="/pages/js.pages/js2.html"><button class="btn">JS
-                            day2</button></a></li>
-                <li class="js-list n-disp"><a href="#"><button class="btn">JS
-                            day3</button></a></li>
-                <li class="js-list n-disp"><a href="#"><button class="btn">JS
-                            day4</button></a></li>
-                <li class="js-list n-disp"><a href="#"><button class="btn">JS
-                            day 5</button></a></li>
+
+
+                <li class="p-pro not-displayer">
+                    <a href="https://irishair-aiw4poevj-shuyin21.vercel.app/" target="_blank">Iris Hair</a>
+                </li>
+                <li class="p-pro not-displayer">
+                    <a href="https://action-olive.vercel.app/" target="_blank">Theatre</a>
+                </li>
+                <li class="p-pro not-displayer">
+                    <a href="https://seventh-heaven.vercel.app/" target="_blank">Seventh Heaven</a>
+                </li>
+                <li class="p-pro not-displayer">
+                    <a href="https://theme-clock-livid.vercel.app/" target="_blank">Theme Clock</a>
+                </li>
             </ul>
 
         </div>
     </div>
-
-
-
-    </div>
-
-    </div>
-    <div id="other-projects" class="box">
-        <div id="h3-div" class="box">
-            <h3>Other Projects</h3>
-        </div>
-        <div id='olinks-wrapper'>
-            <div id="line" class="not-show line-extra"></div>
-            <div id="v-line" class="not-show line-extra-slow"></div>
-            <div id="extra" class="not-show no-size2">
-                <ul>
-                    <li><a href="https://theme-clock-livid.vercel.app/">Theme Clock</a></li>
-                    <li><a href="https://action-olive.vercel.app/">Theatre Club</a></li>
-                    <li><a href="https://irishair.vercel.app/">Iris Hair</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <footer class="box">
-        <p>Gyula Nagy
-            <script>document.write(new Date().getFullYear())</script>
-        </p>
+    <footer>
 
     </footer>
-    <script src="/script.js"></script>
-
+    <script src="/newScript.js"></script>
 </body>
 
 </html>
