@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/js4.css">
+    <title>Js day 4</title>
+</head>
+
+<body>
+    <h1>Js day 4</h1>
+    <br>
+    <h3>Arrays</h3>
+    <p>I have an array of <br>
+        const fruits = ["apple", "banana", "pear", "grapes", "cherries", "plum", "pineapple"];</p>
+    <p>With for loop like: for (let i = 0; i < fruits.length; i++) { const fruit=fruits[i];) we can get all the items
+            from an array</p>
+            <div id="array-div">
+
+            </div>
+
+            <h3>Object</h3>
+            <p>const owner = {name: "John Doe", age:45,}</p>
+            <p>to get an information from an object just have to declare <b>owner.name or owner.age</b> <br>
+                very poverful when using together with an array nested </p>
+
+            <h3>Functions</h3>
+            <p>A basic function looks like <br>
+                <b>function nameOfFunction (){what to do}</b> <br>
+                we need to call the function where we want in our code like <br>
+                nameOfFunction() <br>
+                From ES6 we can use shorten version of functions like ()=>{}
+            </p>
+            <p>function till(x, y){
+                return x * y} <br>
+                till(4,5); will return 20
+            </p>
+            <p>We can add a function to a variable <br>
+                const till = (x, y)=>{ x * y} still calling like : till(4,5)</p>
+
+            <input type="number" placeholder="add number" id="fNum"><input type="number" placeholder="add number"
+                id="sNum">
+            <button type="submit" onClick="till()">Try This Function</button>
+
+
+            <p id="answer"></p>
+            <script src="../../js/js4.js"></script>
+</body>
+
+</html>
