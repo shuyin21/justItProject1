@@ -15,3 +15,48 @@ input {
 button {
     cursor: pointer;
 }
+
+#calculator-wrapper {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#calculator {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    background-color: gray;
+}
+
+#display {
+    border: 1px solid red;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #999;
+    font-size: 24px;
+}
+
+.c-btn {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 7px;
+
+}
+
+#selection {
+    height: 30px;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
