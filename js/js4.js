@@ -29,7 +29,7 @@ const till = () => {
     answer.innerHTML = answerNumber;
     first.value = '';
     second.value = '';
-    console.log(first);
+
 }
 
 const calculate = () => {
@@ -52,7 +52,6 @@ const calculate = () => {
     else if (sel === '%') {
         sum = n1 % n2;
     }
-
     display.innerHTML = n1 + sel + n2 + '=' + ' ' + sum;
     num1.value = '';
     num2.value = '';

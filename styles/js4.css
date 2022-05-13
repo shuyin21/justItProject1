@@ -10,6 +10,7 @@ h1 {
 
 input {
     width: 100px;
+    text-align: center;
 }
 
 button {
@@ -35,6 +36,7 @@ button {
     align-items: center;
     padding: 2%;
     background-color: gray;
+    box-shadow: 4px 4px #222;
 }
 
 #display {

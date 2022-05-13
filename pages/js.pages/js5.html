@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/js5.css">
+    <title>Js day5</title>
+</head>
+
+<body>
+    <h1>Js day 5</h1>
+    <h3>Prompts/Alerts</h3>
+    <p>To make a prompt function you call prompt(value) <br>
+        let name = prompt('Who are you ?');</p>
+    <p>Alert is just a message, we call like alert('something')</p>
+    <button onclick="promptF()">Prompt</button>
+
+    <h3>Loops</h3>
+    <h4>For Loop</h4>
+    <p>
+        let something = ['1', '2', 3, 4, 5] <br>syntax =
+
+        <b>for(let i = 0;i
+            something.length; i++){ console.log(something[i]) } </b>
+    </p>
+
+    <h4>forEach loop</h4>
+    <p>const fruits = ['apple','banana','pear','grapes']</p>
+    <p><b>fruits.forEach(myFunc)</b> </p>
+    <p><b>function myFunc(item){
+            let text = 'This is the ' + item;
+            console.log(text)</b>
+    </p>
+    <h4>While Loop</h4>
+    <p>let i=0; <br>
+        let content = 'the number'; <br>
+        while(i < 15){ content +=' ' + i + ' is less than 15 ' ; i++;</p>
+            <h4>Do While loop</h4>
+            <p>let b = 0;</p>
+            <p>Do is the action while is the condition<br>
+                do{
+                b++;}
+                while(b != 15);
+            </p>
+            <button onclick="createList()">Create List with for Loop</button>
+            <button onclick="createList2()">Create List with forEach Loop</button>
+            <ul id="ul">
+
+            </ul>
+            <script src="../../js/js5.js"></script>
+</body>
+
+</html>
