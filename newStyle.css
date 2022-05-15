@@ -241,6 +241,10 @@ footer {
 }
 
 @media (max-width:768px) {
+    body {
+        padding-top: 10%;
+    }
+
     .whtonblk {
         font-size: 1rem;
     }
