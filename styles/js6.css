@@ -30,3 +30,38 @@ img {
 .highlight i {
     color: #000;
 }
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-box {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+.extra-size {
+    width: 100%;
+    height: 100%;
+}
+
+#magic {
+    width: 100%;
+    height: 50px;
+}
+
+.hide {
+    display: none;
+
+}
+
+button {
+    cursor: pointer;
+}
