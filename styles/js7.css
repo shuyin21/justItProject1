@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.img-div {
+    width: 50vw;
+    height: 900px;
+    background-image: url('../images/jsScreen.png');
+    object-fit: cover;
+    background-size: cover;
+}
+
+@media (max-width:768px) {
+    .img-div {
+        width: 100vw;
+        height: 600px;
+    }
+}
