@@ -10,11 +10,47 @@
 </head>
 
 <body>
-    <h1>JavaScript day 8</h1>
-
-
-
-    <script src="../../js/js8.js"></script>
+    <div class="main">
+        <h1>JavaScript day 8</h1>
+        <h2>setTimeOut() and setInterval()</h2>
+        <h3>setTimeout(function,delay time)</h3>
+        <p>This is for delaying function execution <br>
+            <b>setTimeout(function,5000)</b>
+        </p>
+        <p>If we use function what need parameters you do like <br>
+            <b> function myFunction(x,y){
+                console.log(x,y);
+                } <br>
+                const tOut = setTimeout(myFunction,5000,'john', 'smith'); <br>
+                tOut()</b>
+        </p>
+        <h3>clearTimeout()</h3>
+        <p></p>
+        <div class="task">
+            <p>Wait 20sec to see the message or subcribe to see it now!!</p>
+            <button class="subscribe">Subscribe</button>
+            <h3 id="hiddenMessage" class="display">Hello my friend!!</h3>
+        </div>
+        <h3>setInterval()</h3>
+        <p>Syntax is the same as setTimeout()
+            <br> SetInterval is for repetation after some time like : <br>
+            const timeHandler = () => { <br>
+            let d = new Date(); <br>
+            let hour = d.getHours(); <br>
+            let min = d.getMinutes(); <br>
+            let sec = d.getSeconds(); <br>
+            let time = hour + ':' + min + ':' + sec; <br>
+            timeHolder.innerHTML = time; <br>
+            } <br>
+            const timeShow = () => { <br>
+            setInterval(timeHandler, 1000)
+            } <br>
+            timeShow();
+        </p>
+        <h4 id="time"></h4>
+    </div>
+    <script src="../../js/js8.js">
+    </script>
 </body>
 
 </html>

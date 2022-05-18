@@ -4,6 +4,24 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2 {
     text-align: center;
+}
+
+.main {
+    padding: 0 5%;
+}
+
+.display {
+    display: none;
+}
+
+#time {
+    border: 2px solid red;
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #000;
+    color: #fff;
 }
